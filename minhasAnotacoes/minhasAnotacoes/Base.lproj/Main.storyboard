@@ -30,9 +30,12 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
-                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DT7-5u-JNS">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DT7-5u-JNS">
                                         <rect key="frame" x="0.0" y="240" width="321" height="38"/>
                                         <state key="normal" image="botao_salvar"/>
+                                        <connections>
+                                            <action selector="botaoSalvar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gKZ-dW-YOy"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -55,6 +58,9 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="Minhas anotações" id="qaa-kF-T4E"/>
+                    <connections>
+                        <outlet property="textoCampo" destination="0iy-FZ-f0q" id="o9S-Ik-nCd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
